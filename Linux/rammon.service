@@ -1,0 +1,9 @@
+[Unit]
+Description=RAM monitor
+
+[Service]
+ExecStart=/usr/bin/rammon/overheat.sh -l /var/log/rammon/overheat.log
+
+[Install]
+WantedBy=multi-user.target
+
